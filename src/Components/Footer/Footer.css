@@ -1,0 +1,351 @@
+* {
+    font-family: Roboto-Regular "Helvetica Neue"
+        Helvetica Tahoma Arial sans-serif;
+}
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+
+    .top_Footer {
+        display: flex;
+        max-width: 1180px;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        gap: 8rem;
+        justify-content: space-around;
+
+        .Footer_Colums {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .inner_Colums {
+                display: flex;
+                flex-direction: column;
+
+                .Footer_Heading {
+                    font-size: 2rem;
+                    color: #F85606;
+                    font-weight: 500;
+                    line-height: 2.8rem;
+                    margin-bottom: 1rem;
+                }
+
+                .secondHeading {
+                    margin-top: 2rem;
+                }
+
+                .Footer_links {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.4rem;
+
+                    .Footer_link {
+                        list-style: none;
+                        font-size: 1.4rem;
+
+                        >a {
+                            text-decoration: none;
+                            color: #1c1c1c;
+
+                            &:hover {
+                                /* color: #F85606; */
+                                text-decoration: underline;
+                                transition: all .40s ease;
+                            }
+                        }
+
+                        >span {
+                            color: #1c1c1c;
+                        }
+                    }
+                }
+
+                .Footer_links-int {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    /* padding-right: 2rem; */
+
+                    .Footer_link-int {
+                        display: flex;
+                        list-style: none;
+                        margin: 0.2rem 1rem 0.5rem 0;
+                        font-size: 1.4rem;
+
+                        >a {
+                            display: flex;
+                            align-items: center;
+                            gap: 0.5rem;
+                            text-decoration: none;
+                            color: #1c1c1c;
+                            margin-bottom: 0.4rem;
+
+                            &:hover {
+                                /* color: #F85606; */
+                                text-decoration: underline;
+                                transition: all .40s ease;
+                            }
+
+                            .flags {
+                                background-image: url(//img.alicdn.com/imgextra/i2/O1CN01PPEuYH1lWMHGOUbok_!!6000000004826-2-tps-1947-1053.png);
+                                display: inline-block;
+                                width: 9rem;
+                                height: 9rem;
+                                border-radius: 50%;
+                            }
+
+                            .pay-icons {
+                                background-image: url(//img.alicdn.com/imgextra/i2/O1CN01PPEuYH1lWMHGOUbok_!!6000000004826-2-tps-1947-1053.png);
+                                margin-right: 3px;
+                                width: 14.39rem;
+                                height: 8.3rem;
+                                display: inline-block;
+                                border-radius: 2px;
+                                overflow: hidden;
+                                border: none;
+                            }
+
+                            .Verified-icon {
+                                background-image: url(//img.alicdn.com/imgextra/i2/O1CN01PPEuYH1lWMHGOUbok_!!6000000004826-2-tps-1947-1053.png);
+                                width: 27rem;
+                                height: 12rem;
+                            }
+
+                            .stores-icon {
+                                background-image: url(//img.alicdn.com/imgextra/i2/O1CN01PPEuYH1lWMHGOUbok_!!6000000004826-2-tps-1947-1053.png);
+                                width: 29rem;
+                                height: 9rem;
+                            }
+                        }
+
+                        >span {
+                            color: #1c1c1c;
+                        }
+                    }
+
+                    .pay-method {
+                        margin-bottom: 0.012rem !important;
+                    }
+
+                    .social-icon {
+                        display: flex;
+                        background-image: url(//img.alicdn.com/imgextra/i2/O1CN01PPEuYH1lWMHGOUbok_!!6000000004826-2-tps-1947-1053.png);
+                        width: 8rem;
+                        height: 8rem;
+                        margin-right: 1.5rem;
+                    }
+                }
+
+                .Exlusive-icons {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 2rem;
+
+                    .Qr-Code {
+                        width: 30rem;
+                        height: 11rem;
+                        border-radius: 10px;
+                        margin-top: 2px;
+                        margin-right: 2rem;
+
+                        >img {
+                            width: 100%;
+                            border-radius: 1rem;
+                            height: 100%;
+                        }
+                    }
+
+                    .Footer_links-int {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        /* gap: 1.6rem; */
+                        padding-right: 2rem;
+
+                        .Footer_link-int {
+                            list-style: none;
+                            margin: -0.5rem;
+
+                            >a {
+                                display: flex;
+                                align-items: center;
+                                gap: 0.5rem;
+                                text-decoration: none;
+                                color: #1c1c1c;
+                                margin-bottom: -0.5rem;
+
+                                &:hover {
+                                    /* color: #F85606; */
+                                    text-decoration: underline;
+                                    transition: all .40s ease;
+                                }
+
+                                .stores-icon {
+                                    background-image: url(//img.alicdn.com/imgextra/i2/O1CN01PPEuYH1lWMHGOUbok_!!6000000004826-2-tps-1947-1053.png);
+                                    width: 29rem;
+                                    height: 9rem;
+                                }
+                            }
+
+                            >span {
+                                color: #1c1c1c;
+                            }
+                        }
+
+                        .Happy-icon {
+                            display: flex;
+                            width: 40rem;
+                            height: 10rem;
+                            background-image: url(//img.alicdn.com/imgextra/i2/O1CN01PPEuYH1lWMHGOUbok_!!6000000004826-2-tps-1947-1053.png);
+                        }
+
+                        .text {
+                            font-size: 1rem;
+                            font-weight: 300;
+                            color: #000;
+                            line-height: 1.6rem;
+                        }
+                    }
+
+                    .Logo-container {
+                        display: flex;
+                        width: 4rem;
+                        height: 4rem;
+                        margin-right: 1.5rem;
+
+                        .Logo {
+                            width: 100%;
+                            height: 100%;
+                            background-image: url(//img.alicdn.com/imgextra/i2/O1CN01PPEuYH1lWMHGOUbok_!!6000000004826-2-tps-1947-1053.png);
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+    }
+
+    .Bottom_Footer {
+        background: #F1F1F1;
+        width: 100%;
+
+        .bottom-inner-footer {
+            max-width: 1188px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2.5rem 0;
+            display: flex;
+
+            .left-side {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+
+                .inner-column {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    padding-right: 5rem;
+
+                    .bottom-heading {
+                        font-size: 1.8rem;
+                        line-height: 2rem;
+                        margin-bottom: 1.5rem;
+                        font-weight: 400;
+                        color: #606060;
+                    }
+
+                    .sub-heading {
+                        font-size: 1.4rem;
+                        color: #606060;
+                    }
+
+                    .bottom-detail-text {
+                        font-size: 1.02rem;
+                        line-height: 1.6rem;
+                        margin-bottom: 1rem;
+                        font-weight: 400;
+
+                        .bold-text {
+                            font-size: 1rem;
+                            font-weight: 600;
+                            color: #606060;
+                        }
+                    }
+                }
+            }
+
+            .right-side {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+
+                .inner-column {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    padding-right: 5rem;
+
+                    .bottom-heading {
+                        font-size: 1.8rem;
+                        line-height: 2rem;
+                        margin-bottom: 1.5rem;
+                        font-weight: 400;
+                        color: #606060;
+                    }
+
+                    .bottom-categories-links {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: flex-start;
+                        margin-bottom: 1rem;
+
+                        .catlinks {
+                            font-size: 1.1rem;
+                            line-height: 1.6rem;
+                            font-size: 1.2rem;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+
+                        .bold {
+                            font-weight: 600;
+                            display: block;
+                            font-size: 1.3rem;
+                            width: 230px;
+                            color: #484848;
+                            margin: 0 1rem 0.3rem 0;
+                        }
+                    }
+
+                    .seemorelinks {
+                        font-size: 1.12rem;
+                        color: #199CB7;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (width <=680px) {
+    .Footer {
+        display: none;
+    }
+}
