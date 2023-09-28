@@ -54,8 +54,7 @@ html {
                 font-weight: 400;
                 color: #fff;
                 cursor: pointer;
-                font-family: Roboto-Regular, "Helvetica Neue", Helvetica, Tahoma, Arial,
-                    Sans-serif;
+                font-family: Roboto-Regular;
                 transition: ease 0.2s;
 
                 &:hover {
@@ -223,17 +222,16 @@ html {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        max-width: 1200px;
+        max-width: 1188px;
         width: 100%;
         margin: 0 auto;
-        padding: .5rem 0.5rem 1.4rem 0.5rem;
+        padding: .5rem 0.5rem 1.1rem 0.5rem;
         /* transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045); */
 
         .logo-search-cont {
             display: flex;
             max-width: 74%;
             width: 100%;
-            flex-direction: row;
             align-items: center;
             gap: 0.8rem;
 
@@ -241,7 +239,7 @@ html {
                 width: 13%;
                 height: 15%;
                 cursor: pointer;
-                mix-blend-mode: hard-light;
+                margin-bottom: 4px;
             }
 
             .cate-dropdown {

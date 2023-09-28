@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ bottom }) => {
   return (
     <>
       <div className="Footer">
@@ -415,7 +415,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="Bottom_Footer">
+        <div
+          className="Bottom_Footer"
+          style={{ display: bottom === true ? "flex" : "none" }}
+        >
           <div className="bottom-inner-footer">
             <div className="left-side">
               <div className="inner-column">

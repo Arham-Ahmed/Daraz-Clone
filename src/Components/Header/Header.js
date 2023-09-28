@@ -1,6 +1,6 @@
 import { useEffect, useReducer } from "react";
 import "./Header.css";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import reducer from "../../Reducers/dropReducer";
 import CateSidebar from "../CateSidebar/CateSidebar";
 

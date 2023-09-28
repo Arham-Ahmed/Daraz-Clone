@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  font-family: Roboto-Regular "Helvetica Neue"
-    Helvetica Tahoma Arial sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Roboto-Regular !important;
 }
 
 code {
-  font-family: Roboto-Regular "Helvetica Neue"
-    Helvetica Tahoma Arial sans-serif;
+  font-family: Roboto-Regular !important;
+}
+
+html {
+  font-family: Roboto-Regular !important;
 }

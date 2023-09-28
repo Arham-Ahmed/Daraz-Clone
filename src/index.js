@@ -4,14 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createHashRouter } from "react-router-dom";
+import About from "./Components/About/About";
 const rrouter = createHashRouter([
   {
     path: "/",
     element: <App />,
   },
   {
-    path: "/About",
-    element: "<About />",
+    path: "About",
+    element: <About />,
   },
   {
     path: "*",
