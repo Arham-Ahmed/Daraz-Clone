@@ -6,7 +6,6 @@ const About = () => {
   const center = {
     display: "flex",
     width: "200px",
-    // height: "400px",
     margin: "20% auto",
   };
   return (
