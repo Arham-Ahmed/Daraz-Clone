@@ -529,8 +529,12 @@ html {
             .logo-search-cont {
                 max-width: 100%;
 
-                .img {
+                >a {
                     display: none;
+
+                    .logo {
+                        display: none;
+                    }
                 }
 
                 .search-container {

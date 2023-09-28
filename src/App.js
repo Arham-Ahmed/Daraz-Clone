@@ -5,12 +5,14 @@ import dataSlider from "./Components/Slider/SliderData/dataSlider";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
+  document.title = `Online Shopping in Pakistan: Fashion, Electronics & Groceries - Daraz.pk -
+  Clone`;
   const width = window.innerWidth;
   return (
     <div className="App">
       <div className="main-container">
         <Header />
-        <Slider items={dataSlider} imgWidth={960} />
+        <Slider items={dataSlider} imgWidth={width} />
         <Footer bottom={true} />
       </div>
     </div>
