@@ -3,15 +3,19 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { RouterProvider, createHashRouter } from "react-router-dom";
+import {
+  RouterProvider,
+  createBrowserRouter,
+  createHashRouter,
+} from "react-router-dom";
 import About from "./Components/About/About";
-const rrouter = createHashRouter([
+const rrouter = createBrowserRouter([
   {
-    path: "/",
+    exact_path: "/",
     element: <App />,
   },
   {
-    path: "About",
+    path: "/About",
     element: <About />,
   },
   {
