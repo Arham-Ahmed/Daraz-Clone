@@ -1,3 +1,28 @@
+* {
+    position: relative;
+}
+
 .About-main-container {
     background: #fff;
+
+    .About-content {
+        display: flex;
+        flex-direction: column;
+        max-width: 1188px;
+        margin: 0 auto;
+        padding: 1.2rem 0;
+        gap: 1.2rem;
+
+        .img-video-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .video {
+                position: absolute;
+                top: 1.2rem;
+                right: 0;
+            }
+        }
+    }
 }

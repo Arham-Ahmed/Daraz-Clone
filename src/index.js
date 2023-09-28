@@ -35,7 +35,7 @@ root.render(
     <BrowserRouter basename="/Daraz-Clone">
       <Routes>
         <Route exact path="/Daraz-Clone" element={<App />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/about-us" element={<About />} />
         <Route path="*" element={<App />} />
       </Routes>
     </BrowserRouter>

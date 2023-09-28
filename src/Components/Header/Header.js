@@ -152,11 +152,13 @@ function Header() {
         </div>
         <div className="bottom-header">
           <div className="logo-search-cont">
-            <img
-              src="https://icms-image.slatic.net/images/ims-web/e650d6ca-1841-4646-b0e9-4ddbf2beb731.png"
-              alt=""
-              className="img"
-            />
+            <Link to="/">
+              <img
+                src="https://icms-image.slatic.net/images/ims-web/e650d6ca-1841-4646-b0e9-4ddbf2beb731.png"
+                alt=""
+                className="logo"
+              />
+            </Link>
             <div
               className="cate-dropdown"
               onMouseEnter={() => dispatch({ type: "HEADER_CATE_DROP" })}

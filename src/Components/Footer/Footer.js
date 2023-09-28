@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 const Footer = ({ bottom }) => {
   return (
     <>
-      <div className="Footer">
+      <div
+        className="Footer"
+        style={{ background: bottom === true ? "#F5F5F5" : "#F5F5F5" }}
+      >
         <div className="top_Footer">
           <div className="Footer_Colums">
             <div className="inner_Colums">
@@ -59,7 +62,7 @@ const Footer = ({ bottom }) => {
               <h4 className="Footer_Heading">Daraz</h4>
               <ul className="Footer_links">
                 <li className="Footer_link">
-                  <Link to={"/About"}>About Us</Link>
+                  <Link to={"/about-us"}>About Us</Link>
                 </li>
                 <li className="Footer_link">
                   <Link to={" "}>Digital Payments</Link>
@@ -287,7 +290,7 @@ const Footer = ({ bottom }) => {
               <div className="Exlusive-icons">
                 <div className="Qr-Code">
                   <img
-                    src="//laz-img-cdn.alicdn.com/images/ims-web/TB18aqePBLoK1RjSZFuXXXn0XXa.png"
+                    src="https://laz-img-cdn.alicdn.com/images/ims-web/TB18aqePBLoK1RjSZFuXXXn0XXa.png"
                     alt=""
                   />
                 </div>
