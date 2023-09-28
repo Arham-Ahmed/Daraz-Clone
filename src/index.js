@@ -4,30 +4,41 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import {
+  BrowserRouter,
+  Route,
   RouterProvider,
+  Routes,
   createBrowserRouter,
   createHashRouter,
 } from "react-router-dom";
 import About from "./Components/About/About";
-const rrouter = createBrowserRouter([
-  {
-    exact_path: "/",
-    element: <App />,
-  },
-  {
-    path: "/About",
-    element: <About />,
-  },
-  {
-    path: "*",
-    element: <App />,
-  },
-]);
+// const rrouter = createBrowserRouter([
+//   {
+//     basename: process.env.PUBLIC_URL,
+//     exact_path: "/",
+//     element: <App />,
+//   },
+//   {
+//     path: "/About",
+//     element: <About />,
+//   },
+//   {
+//     path: "*",
+//     element: <App />,
+//   },
+// ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={rrouter}></RouterProvider>
+    {/* <RouterProvider router={rrouter}></RouterProvider> */}
+    <BrowserRouter basename="/Daraz-Clone">
+      <Routes>
+        <Route exact path="/Daraz-Clone" element={<App />} />
+        <Route path="/About" element={<About />} />
+        <Route path="*" element={<App />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
