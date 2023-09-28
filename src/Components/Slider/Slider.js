@@ -170,7 +170,8 @@ const Slider = ({ items, imgWidth }) => {
                 >
                   <img
                     id={index}
-                    src={process.env.PUBLIC_URL + ele.img}
+                    // src={process.env.PUBLIC_URL + ele.img}
+                    src={ele.img}
                     draggable="false"
                     alt=""
                   />
