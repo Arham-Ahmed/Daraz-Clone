@@ -75,12 +75,13 @@
             .About-Lang-drop {
                 display: flex;
                 flex-direction: column;
+                width: 100%;
 
                 .lang {
                     display: flex;
                     margin-top: 1rem;
                     padding: 0.8rem 1.3rem;
-
+                    width: 100%;
                     >span {
                         color: #333;
                         font-size: 1.4rem;
