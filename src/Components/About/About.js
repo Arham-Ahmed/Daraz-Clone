@@ -2,19 +2,18 @@ import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./About.css";
-import { useEffect } from "react";
+import MobileAbout from "./MobileAbout";
+import PageHeader from "../Header/PagesHeader/PageHeader";
 
 const About = () => {
   document.title = "About Us - Daraz.pk";
-  const center = {
-    display: "flex",
-    width: "200px",
-    margin: "20% auto",
-  };
+
   return (
     <>
-      <Header />
       <div className="About-main-container">
+        <div className="header-container">
+          <Header />
+        </div>
         <div className="About-content">
           <img
             src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1aJhxcBCw3KVjSZFuXXcAOpXa.jpg_1200x1200q75.jpg_.webp"
@@ -55,9 +54,9 @@ const About = () => {
                 height="450"
                 src="https://www.youtube.com/embed/16P735hTtQs?si=KHAHNX2SlCLjqysT"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>
@@ -77,6 +76,13 @@ const About = () => {
             src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1Tf4YXgFY.1VjSZFqXXadbXXa.jpg_1200x1200q75.jpg_.webp"
             alt=""
           />
+        </div>
+
+        <div className="mobile-About-content">
+          <div className="header">
+            <PageHeader title={document.title} />
+          </div>
+          <MobileAbout />
         </div>
       </div>
       <Footer bottom={false} />

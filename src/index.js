@@ -12,6 +12,7 @@ import {
   createHashRouter,
 } from "react-router-dom";
 import About from "./Components/About/About";
+import MobileAbout from "./Components/About/MobileAbout";
 // const rrouter = createBrowserRouter([
 //   {
 //     basename: process.env.PUBLIC_URL,

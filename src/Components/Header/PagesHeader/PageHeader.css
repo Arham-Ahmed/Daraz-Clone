@@ -1,0 +1,117 @@
+* {
+    position: relative;
+}
+
+.Page_header {
+    width: 100%;
+    display: flex;
+    padding: 1.5rem 0.5rem;
+    background: #f85606;
+    align-items: center;
+    transition: all .40s ease;
+
+    >a {
+        display: flex;
+        width: 2.2rem;
+        height: 2.2rem;
+
+        .back-arrow {
+            display: flex;
+        }
+    }
+
+    .header-title {
+        font-size: 1.9rem;
+        color: #fff;
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin-bottom: 0.1rem;
+    }
+
+    .drop-dots {
+        position: absolute;
+        top: 0rem;
+        right: 1rem;
+        width: 2rem;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-drop-down {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        transition: all 1s ease-in-out;
+
+        .drop-container {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            z-index: 111;
+            gap: 1.3rem;
+            width: 18rem;
+            box-shadow: 0 1px 8px rgba(0, 0, 0, .15);
+            border-radius: .21429em;
+            font-size: 1.5rem;
+            padding: 0.8rem 0;
+
+            >a {
+                >li {
+                    padding: 0.8rem 1.5rem;
+                    color: #333;
+                }
+
+            }
+
+            >li {
+                padding: 0.8rem 1.5rem;
+                color: #333;
+            }
+
+            .About-Lang-drop {
+                display: flex;
+                flex-direction: column;
+
+                .lang {
+                    display: flex;
+                    margin-top: 1rem;
+                    padding: 0.8rem 1.3rem;
+
+                    >span {
+                        color: #333;
+                        font-size: 1.4rem;
+                        margin-left: 0.8rem;
+                    }
+
+                    >img {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+
+                    >svg {
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        right: 1rem;
+                        width: 2rem;
+                        height: 100%;
+                        stroke: #1A9CB7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sticky-page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11111;
+    height: auto;
+    padding: 1.5rem 0.5rem;
+}

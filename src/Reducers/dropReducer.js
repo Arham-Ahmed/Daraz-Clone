@@ -16,6 +16,14 @@ const reducer = (state, action) => {
       return { ...state, isheaderCate: false };
     case "HEADER_CATE_DROP":
       return { ...state, isheaderCate: true };
+    case "ABOUT_DROP_CLOSE":
+      return { ...state, isAboutDrop: false };
+    case "ABOUT_DROP":
+      return { ...state, isAboutDrop: true };
+    case "DIS_LANG_CHECK_CLOSE":
+      return { ...state, islangCheck: false };
+    case "DIS_LANG_CHECK":
+      return { ...state, islangCheck: true };
 
     default:
       return state;
