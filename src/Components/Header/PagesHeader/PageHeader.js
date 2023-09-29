@@ -1,12 +1,12 @@
 import React, { useEffect, useReducer } from "react";
 import "./PageHeader.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import reducer from "../../../Reducers/dropReducer";
 
 const intialState = {
   isAboutDrop: false,
   isLangdrop: false,
-  islangCheck: true,
+  islangCheck: false,
 };
 const PageHeader = ({ title }) => {
   const [state, dispatch] = useReducer(reducer, intialState);
@@ -14,7 +14,6 @@ const PageHeader = ({ title }) => {
     let Header = document.querySelector(".Page_header");
     Header.classList.toggle("sticky-page-header", window.scrollY > 100);
   };
-  const navigate = useNavigate();
   useEffect(() => {
     window.addEventListener("scroll", handleSticky);
     window.addEventListener("load", handleSticky);
@@ -26,8 +25,11 @@ const PageHeader = ({ title }) => {
   return (
     <>
       <header className="Page_header">
-        <Link>
-          <div className="back-arrow" onClick={() => console.log(navigate(-1))}>
+        <Link to="/">
+          <div
+            className="back-arrow"
+            onClick={() => dispatch({ type: "ABOUT_DROP_CLOSE" })}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="100%"
@@ -112,12 +114,15 @@ const PageHeader = ({ title }) => {
             >
               زبان تبدیل کریں
             </li>
-            <div className="About-Lang-drop">
+            <ul
+              className="About-Lang-drop"
+              style={{
+                display: state.isLangdrop ? "flex" : "none",
+              }}
+            >
               <li
                 className="lang"
-                onClick={() =>
-                  console.log(dispatch({ type: "DIS_LANG_CHECK" }))
-                }
+                onClick={() => dispatch({ type: "DIS_LANG_CHECK" })}
               >
                 <img
                   src="https://vn-live-02.slatic.net/layout/build/components/495e912a6d07cf10252d94b513af5157.svg"
@@ -132,7 +137,7 @@ const PageHeader = ({ title }) => {
                   className="bi bi-check-lg"
                   viewBox="0 0 16 16"
                   style={{
-                    display: state.islangCheck === true ? "flex" : "none",
+                    display: state.islangCheck == true ? "flex" : "none",
                   }}
                 >
                   <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
@@ -155,13 +160,13 @@ const PageHeader = ({ title }) => {
                   className="bi bi-check-lg"
                   viewBox="0 0 16 16"
                   style={{
-                    display: state.islangCheck === false ? "flex" : "none",
+                    display: state.islangCheck == false ? "flex" : "none",
                   }}
                 >
                   <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                 </svg>
               </li>
-            </div>
+            </ul>
 
             <Link to="">
               <li>Need Help?</li>
