@@ -1,20 +1,17 @@
 import "./App.css";
-import Header from "./Components/Header/Header";
-import Slider from "./Components/Slider/Slider";
-import dataSlider from "./Components/Slider/SliderData/dataSlider";
-import Footer from "./Components/Footer/Footer";
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import About from "./Components/About/About";
+import Home from "./Components/Home/Home";
 function App() {
-  document.title = `Online Shopping in Pakistan: Fashion, Electronics & Groceries - Daraz.pk -
-  Clone`;
-  const width = window.innerWidth;
   return (
-    <div className="App">
-      <div className="main-container">
-        <Header />
-        <Slider items={dataSlider} imgWidth={width} />
-        <Footer bottom={true} />
-      </div>
+    <div className="main-container">
+      <Router basename="/">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

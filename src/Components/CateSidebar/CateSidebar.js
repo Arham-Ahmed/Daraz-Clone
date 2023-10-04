@@ -33,7 +33,7 @@ export const CateSidebar = ({ style }) => {
                   SetCName(e.currentTarget.children[1].innerText);
                   // console.log(e.currentTarget.children[1].innerText);
                   SetDisplay(true);
-                  console.log(e.currentTarget.classList.toggle("k"));
+                  // console.log(e.currentTarget.classList.toggle("k"));
                 }}
               >
                 <div className="icon-holder">{x.icon}</div>
