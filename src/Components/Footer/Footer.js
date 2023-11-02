@@ -1313,6 +1313,113 @@ const Footer = ({ bottom }) => {
           </div>
         </div>
       </div>
+    <div className="Mobile_Footer">
+    <ul class="Mobile_Footer_ul">
+      <li class="Mobile_Footer_li">
+        <div class="Footer_Mobile_img">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"  class="bi bi-check-circle" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/> </svg>
+        </div>
+      <span class="Mobile_Footer_text">
+          Genuine Products
+        </span>
+      </li>
+      <li class="Mobile_Footer_li">
+        <div class="Footer_Mobile_img">
+        <svg
+   height="100%"
+   width="100%"
+   version="1.1"
+   id="Capa_1"
+   viewBox="0 0 494.05398 442.37798"
+   xmlSpace="preserve"
+   sodipodiDocname="57029ecfa2fcb51cf5516c17310eedac.svg"
+   xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlnsSvg="http://www.w3.org/2000/svg"><defs
+   id="defs11" /><sodipodiNamedview
+   id="namedview9"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscapePageshadow="2"
+   inkscapePageopacity="0.0"
+   inkscapePagecheckerboard="0" />
+<g
+   id="g6"
+   transform="translate(0,-25.838)">
+	<path
+   d="m 483.555,277.333 h -4.982 c -2.332,-36.385 -21.757,-68.194 -50.318,-87.453 0.481,-1.204 0.753,-2.515 0.753,-3.891 V 53.181 c 0,-15.077 -12.266,-27.343 -27.343,-27.343 H 27.343 C 12.266,25.838 0,38.104 0,53.181 v 234.108 c 0,15.077 12.266,27.343 27.343,27.343 H 234.97 v 130.684 c 0,12.627 10.273,22.9 22.9,22.9 h 213.284 c 12.627,0 22.9,-10.273 22.9,-22.9 V 287.833 c 0.001,-5.799 -4.701,-10.5 -10.499,-10.5 z m -26.029,0 h -14.622 c -3.737,-39.971 -37.461,-71.363 -78.392,-71.363 -40.931,0 -74.655,31.393 -78.392,71.363 h -14.622 c 3.777,-48.009 44.051,-85.92 93.014,-85.92 48.963,0 89.237,37.91 93.014,85.92 z m -35.754,0 h -114.52 c 3.64,-28.365 27.921,-50.363 57.26,-50.363 29.339,0 53.621,21.997 57.26,50.363 z M 21,96.204 h 387.008 v 38.653 H 21 Z m 6.343,-49.366 h 374.321 c 3.498,0 6.343,2.845 6.343,6.343 V 75.204 H 21 V 53.181 c 0,-3.498 2.846,-6.343 6.343,-6.343 z m 0,246.795 C 23.845,293.633 21,290.787 21,287.29 V 155.857 h 387.008 v 23.162 c -13.415,-5.54 -28.103,-8.606 -43.496,-8.606 -60.546,0 -110.24,47.321 -114.061,106.92 h -4.982 c -5.799,0 -10.5,4.701 -10.5,10.5 v 5.8 z m 445.712,151.683 c 0,1.048 -0.853,1.9 -1.9,1.9 H 257.87 c -1.048,0 -1.9,-0.853 -1.9,-1.9 V 298.333 h 217.085 z"
+   id="path2" />
+	<path
+   d="m 339.598,391.051 v 21.464 c 0,13.738 11.177,24.914 24.915,24.914 13.738,0 24.914,-11.176 24.914,-24.914 v -21.464 c 12.515,-8.287 20.297,-22.441 20.297,-37.72 0,-24.93 -20.282,-45.212 -45.211,-45.212 -24.93,0 -45.212,20.282 -45.212,45.212 0,15.279 7.781,29.433 20.297,37.72 z m 24.915,-61.931 c 13.35,0 24.211,10.861 24.211,24.212 0,9.447 -5.56,18.093 -14.163,22.027 -3.737,1.708 -6.134,5.44 -6.134,9.549 v 27.607 c 0,2.158 -1.756,3.914 -3.914,3.914 -2.159,0 -3.915,-1.756 -3.915,-3.914 v -27.608 c 0,-4.109 -2.397,-7.84 -6.134,-9.549 -8.604,-3.934 -14.163,-12.58 -14.163,-22.026 0,-13.351 10.861,-24.212 24.212,-24.212 z"
+   id="path4" />
+</g>
+</svg>
+        </div>
+      <span class="Mobile_Footer_text">
+          Safe & Secure Payments
+        </span>
+      </li>
+      <li class="Mobile_Footer_li">
+        <div class="Footer_Mobile_img">
+     <svg version="1.0" id="katman_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 600 450" xmlSpace="preserve" width="100%" height="100%" style={{
+	   scale:"2.1",
+	 }}>
+<path class="st0" d="M400,196.5V135l30-30v102.8h10V93h0c0-0.6-0.1-1.3-0.3-1.9c-0.8-1.9-2.6-3.1-4.6-3.1H195.2
+	c-1.3,0-2.6,0.5-3.5,1.5l-40,40c-0.9,0.9-1.5,2.2-1.5,3.5v189.8c0,2.8,2.2,5,5,5H395c2.8,0,5-2.2,5-5V263c6.3,9.2,10,20.3,10,32.3
+	c0,31.7-25.8,57.4-57.4,57.4c-2.8,0-5,2.2-5,5s2.2,5,5,5h10c48.2,0,87.4-39.2,87.4-87.4C450,240.5,429.5,210.5,400,196.5z M393,128
+	h-90.8l30-30h90.8L393,128z M286.6,129.4c-0.9,0.9-1.5,2.2-1.5,3.5v35h-20V135l37-37H318L286.6,129.4z M197.3,98h90.8l-30,30h-90.8
+	L197.3,98z M160.3,317.8V138h94.9v35c0,2.8,2.2,5,5,5h30c2.8,0,5-2.2,5-5v-35H390v54.4c-8.7-2.9-17.9-4.5-27.5-4.5h-7.5v-25
+	c0-1.9-1-3.6-2.7-4.4c-1.7-0.9-3.7-0.7-5.2,0.4l-69.9,50c-1.3,0.9-2.1,2.5-2.1,4.1c0,1.6,0.8,3.1,2.1,4.1l69.9,50
+	c1.5,1.1,3.5,1.2,5.2,0.4c1.7-0.9,2.7-2.6,2.7-4.4v-24.9c13.3,0.6,25.5,5.7,35,13.9v66H160.3z M400.3,342.9
+	c12.2-12.2,19.7-29.1,19.7-47.6c0-37.2-30.3-67.4-67.4-67.4h-2.5c-2.8,0-5,2.2-5,5v20.3l-56.3-40.2l56.3-40.2v20.3c0,2.8,2.2,5,5,5
+	h12.5c42.7,0,77.4,34.7,77.4,77.4C440,304.3,424,329.7,400.3,342.9z"/>
+<path class="st0" d="M170.2,297.8h59.9v10h-59.9V297.8z"/>
+<path class="st0" d="M170.2,277.8h59.9v10h-59.9V277.8z"/>
+</svg>
+    </div>
+      <span class="Mobile_Footer_text">
+          Free & Easy Return
+        </span>
+      </li>
+    </ul>
+    <span className="Crtext">Copyright © 2023 Daraz-Clone</span>
+    
+    <ul class="Mobile_Footer_links">
+      <Link className="Mobile_Footer_a" to="">
+        <li class="Mobile_Footer_li">
+          Help Center
+        </li>
+      </Link>
+       <span class="Line"></span>
+      <Link className="Mobile_Footer_a" to="">
+        <li class="Mobile_Footer_li">
+          Privacy Policy
+        </li>
+      </Link>
+       <span class="Line"></span>
+      <Link className="Mobile_Footer_a" to="">
+        <li class="Mobile_Footer_li">
+          T&Cs
+        </li>
+      </Link>
+       <span class="Line"></span>
+      <Link className="Mobile_Footer_a" to="">
+        <li class="Mobile_Footer_li">
+          Contact Us
+        </li>
+      </Link>
+      <span class="Line"></span>
+      <Link className="Mobile_Footer_a" to="">
+        <li class="Mobile_Footer_li">
+          Sell on Daraz
+        </li>
+      </Link>
+     
+    </ul>
+      </div>
     </>
   );
 };

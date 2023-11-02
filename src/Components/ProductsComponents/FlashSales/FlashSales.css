@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.FlashSales_Container{
+  display: flex;
+  flex-direction: column;
+  
+  .FlashSales_top_clock{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 1.3rem 1.1rem ;
+    border-bottom: 1px solid #cccc;
+    .onSaletext{
+      color: #f85606;
+      font-size: 1.5rem;
+    }
+    .Clock{
+      margin-left: 11rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      .Clock_Ending_Time{
+        font-size: 1.4rem;
+        margin-right: 1.5rem;
+        color: #000;
+      }
+      .Clock_Number{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        width: 3rem;
+        height: 2.8rem;
+        color: #fff;
+        background: #f85606;
+        border-radius: 0.2rem;
+      }
+      .semi_Cloumn{
+        font-size: 1.3rem;
+        color: #f85606;
+      }
+    }
+    .Shop_More_btn{
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      color: #f85606;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      padding: 0.7rem 1rem;
+      border: 1px solid #f85606;
+    }
+  }
+  
+  .FlashSales_bottom_Products{
+    background: #fff;
+    padding: 0.5rem 0.2rem 1rem 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+  }
+}
+  .FlashSales_Mobile_bottom_Products{
+    display: none ;
+  }
+
+
+@media only screen and (width <=680px) {
+  .FlashSales_Container{
+    .FlashSales_top_clock{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: #f85606;
+     .onSaletext{
+       display: none;
+     }
+     .Clock{
+       margin: 0 auto;
+       .Clock_Ending_Time{
+         color: #fff;
+         font-size: 1.5rem;
+     }
+       .Clock_Number{
+           color: #000;
+           background: #fff;
+         font-size: 1.5rem;
+         width: 3.5rem;
+         height: 3.1rem;
+         }
+       .semi_Cloumn{
+         color: #fff;
+         font-size: 1.4rem;
+       }
+       }
+     .Shop_More_btn{
+       top: -3.5rem;
+       border: 0;
+     }
+    }
+  .FlashSales_bottom_Products{
+    display: none ;
+  }
+  }
+  .FlashSales_Mobile_bottom_Products{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    background: #fff;
+    padding: 0.5rem 0.2rem 1rem 0.2rem;
+    .Column_Products{
+    display: flex;
+    flex-basis: 70%;
+    flex-direction: column;
+    border-left: 1px solid #ccc;
+    padding: 0 0 0 .5rem;
+    }
+  }
+}

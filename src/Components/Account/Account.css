@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.Account_Container{
+  max-width: 1188px;
+  width: 100%;
+  margin: 0 auto;
+  .Headers{
+    .Desktop_Header{
+      display: flex;
+    }
+    .Mobile_Header{
+      display: none;
+    }
+  }
+  .Footer{
+    .Desktop_Footer{
+      display: flex;
+    }
+  }
+}
+@media only screen and (width <=680px) {
+  .Account_Container{
+    width: 100%;
+  .Headers{
+    .Desktop_Header{
+      display: none;
+    }
+    .Mobile_Header{
+      display: flex ;
+    }
+  }
+  .Account_body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .Account_body_Top{
+      width: 100%;
+      display: flex;
+      align-items: center ;
+      justify-content: space-between;
+      padding: 0.8rem 1.7rem;
+      background: #e5e5e5ec;
+      .Top_Text{
+        width : 40%;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #000;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+      }
+      .Login_SignUp{
+        padding: 0.7rem 1rem;
+        font-size: 1.3rem;
+        background: #f37200f2;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 0.4rem;
+      }
+    }
+    .Account_body_Bottom{
+      width: 100%;
+      background: #fff;
+      margin-bottom: 2rem;
+      .Account_ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+        background: #bdbdbd;
+        .Account_a{
+          width: 100%;
+          background: #fff;
+          display: flex;
+          align-items: center;
+          padding: 1.8rem 1.5rem;
+          justify-content: flex-start;
+          .svg{
+            width: 3rem;
+            height: 3rem;
+            background: #cecece;
+            margin-right: 1.5rem;
+          }
+          .Text{
+            font-size: 1.5rem;
+            color: #000;
+          }
+        }
+      }
+    }
+    .Promtional_Container{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      background: #fff;
+      .Text{
+        width: 80%;
+        font-size: 1.1rem;
+      }
+      .btn{
+        width: 4rem;
+        height: 1.5rem;
+        border-radius: 0.7rem;
+        background: #b6b6b6cc;
+        .btn_circle{
+          width: 2.2rem;
+          height: 2.2rem;
+          position: absolute;
+          top: -0.45rem;
+          left: 0; 
+          border-radius: 50%;
+          background: #ededed;
+          z-index: 1111;
+          filter: drop-shadow(0 2px rgba(0, 0, 0, .30)); 
+          transition: all .40s ease;
+        }
+      }
+    }
+  }
+  .Footer{
+    .Desktop_Footer{
+      display: none;
+    }
+  }
+}
+}

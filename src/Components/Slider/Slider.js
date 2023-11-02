@@ -54,7 +54,7 @@ const Slider = ({ items, imgWidth }) => {
     return () => {
       slider.removeEventListener("transitionend", transend);
     };
-  }, [currentIndex]);
+  });
 
   const getClientX = (e) => {
     return e.type.startsWith("touch") ? e.touches[0].clientX : e.clientX;
@@ -136,7 +136,9 @@ const Slider = ({ items, imgWidth }) => {
   return (
     <>
       <div className="main-slider-cont">
-        <CateSidebar style={{ bra: "1rem" }} />
+      <CateSidebar style={{
+        bra :"1rem",
+      }} />
         <div
           className="cotnainer-slider"
           onMouseOver={() => setOver(true)}
@@ -168,13 +170,13 @@ const Slider = ({ items, imgWidth }) => {
                     cursor: `${dragging ? "grabbing" : " grab"}`,
                   }}
                 >
-                  <img
-                    id={index}
-                    // src={process.env.PUBLIC_URL + ele.img}
-                    src={ele.img}
-                    draggable="false"
-                    alt=""
+                <picture className="img" id={index}>
+                  <source
+                    media="(max-width:800px)"
+                    srcset={ele.srcset}
                   />
+            <img src={ele.img} width={imgWidth} alt="" />
+                  </picture>
                   <button
                     className=" button right-arrow"
                     style={{

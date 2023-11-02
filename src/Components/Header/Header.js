@@ -18,8 +18,10 @@ function Header() {
     let Header = document.querySelector(".header");
     let Headercate = document.querySelector(".cate-dropdown");
     let topHeader = document.querySelector(".top-header");
+    let bottomheader = document.querySelector(".bottom-header");
     topHeader.classList.toggle("hidden", window.scrollY > 100);
-    Header.classList.toggle("sticky", window.scrollY > 100);
+    bottomheader.classList.toggle("bottombg", window.scrollY > 150);
+    Header.classList.toggle("sticky", window.scrollY > 150);
     Headercate.classList.toggle("show", window.scrollY > 500);
   };
   useEffect(() => {
@@ -197,6 +199,7 @@ function Header() {
           </div>
           <div className="l-s-btn">
             <ul>
+            <Link to="/login">
               <li>
                 <img
                   src="//img.alicdn.com/imgextra/i4/O1CN01kwkROp1vjm0trG3sl_!!6000000006209-2-tps-72-72.png"
@@ -204,8 +207,11 @@ function Header() {
                 />
                 Login
               </li>
+              </Link>
               <li>|</li>
+              <Link to="/signup">
               <li>Sign Up</li>
+              </Link>
             </ul>
           </div>
           <div
@@ -240,7 +246,7 @@ function Header() {
                   name="lang"
                   type="radio"
                   value="english"
-                  checked
+                  
                 />
                 EN / English
               </div>
@@ -264,7 +270,8 @@ function Header() {
             onMouseLeave={() => dispatch({ type: "HEADER_CATE_CLOSE" })}
             style={{ display: state.isheaderCate === true ? "flex" : "none" }}
           >
-            <CateSidebar style={{ bra: "none" }} />
+            <CateSidebar style={{ bra:
+              "none"}} />
           </div>
         </div>
       </header>

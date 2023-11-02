@@ -42,7 +42,7 @@ html {
             display: flex;
             justify-content: flex-start;
             flex-direction: row;
-            max-width: 100rem;
+            /* max-width: 100rem; */
             width: 100%;
             height: 100%;
 
@@ -53,9 +53,13 @@ html {
                 height: 100%;
                 opacity: 1;
 
-                >img {
+                >.img {
+                    width: 100%; 
                     /* flex-shrink: 0; */
                     border-radius: 0.9rem;
+                    >img{
+                      
+                    }
                 }
 
                 .button {
@@ -132,14 +136,14 @@ html {
 
 @media only screen and (width <=1024px) {
     .main-slider-cont {
-        width: 100%;
-        /* height: 34.4rem; */
+        height: 30rem ; 
         box-sizing: border-box;
         overflow: hidden;
+        margin: 0.5rem 0.5rem;
 
         .cotnainer-slider {
-            width: 100%;
-            /* height: 34.4rem; */
+            width: 80%;
+            height: 100%;
             position: relative;
             box-sizing: border-box;
 
@@ -154,14 +158,6 @@ html {
                     /* height: 344px; */
                     margin: 0px 0px 0px 0px;
                     transition: opacity ease-in-out 0.4s;
-                }
-
-                .slide-hidden {
-                    /* width: 100%; */
-                    /* height: 344px; */
-                    /* opacity: 0; */
-                    animation: append-animate .3s linear;
-                    /* position: absolute; */
                 }
             }
 
@@ -205,10 +201,11 @@ html {
 
 @media only screen and (width <=680px) {
     .main-slider-cont {
-        height: 27rem;
-
+        height: 25rem;
+        margin: 0;
+        padding: 0;
         .cotnainer-slider {
-            height: 27rem;
+            height: 25rem;
             width: 100%;
             overflow: hidden;
             border-radius: 0;
@@ -251,5 +248,49 @@ html {
             }
 
         }
+        .indicators {
+        position: absolute;
+        bottom: 3.5rem;
+        left: 0%;
+        z-index: 111;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+
+        .indicator {
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 100%;
+            background: #fff;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+
+        }
+
+
+
+        .indicator-inactive {
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 100%;
+            background: rgba(255, 255, 255, 0.785);
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            transition: all .1s ease-in-out;
+        }
+
+        :nth-child(1) {
+            display: none;
+        }
+
+        :nth-child(11) {
+            display: none;
+        }
+    }
     }
 }

@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.MobileBottomMenuBar_Container{
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  .MobileBottomMenuBar_ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .MobileBottomMenuBar_a{
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      flex-basis: 50%;
+      
+   .MobileBottomMenuBar_li{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.2rem;
+      width: 100%;
+      padding: 0.8rem;
+      .MobileBottomMenuBar_svg{
+        width: 2.1rem;
+        height: 2.1rem;
+        >svg{
+          flex-shrink: 0;
+          width: 100%!important;
+          height: 100%!important;
+          fill: #9d9d9d ;
+        }
+      }
+      .MobileBottomMenuBar_text{
+        font-size: 1.2rem;
+      }
+    }
+/*     &:hover .MobileBottomMenuBar_svg >svg{
+       fill: #f85606 !important;
+    } */
+/*      &:hover .MobileBottomMenuBar_li .MobileBottomMenuBar_text{
+       color:#f85606 ;
+     } */
+    }
+    
+    .MobileBottomMenuBar_a:nth-child(1){
+        .MobileBottomMenuBar_li{
+          gap: 0.3rem;
+          .MobileBottomMenuBar_svg{
+            width: 2.9rem !important;
+            height: 2.9rem !important;
+            margin-top: -0.5rem;
+            >svg{
+              width: 100%!important;
+              height: 100%!important;
+            }
+          }
+          .MobileBottomMenuBar_text{
+           margin-top: -0.4rem !important;
+          }
+        }
+      
+    }
+  }
+}
+
+.active .MobileBottomMenuBar_li .MobileBottomMenuBar_svg >svg{
+  fill:#f85606 !important;
+}
+.active .MobileBottomMenuBar_li .MobileBottomMenuBar_text{
+  color:#f85606 ;
+}
+
+

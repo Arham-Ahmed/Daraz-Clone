@@ -1,21 +1,21 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "./CateSidebar.css";
 import cateData from "./CateData";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const CateSidebar = ({ style }) => {
   const [CName, SetCName] = useState();
   const [CSubName, SetCSubName] = useState();
-  const [SubCate, SetSubCate] = useState([]);
+
   const [Display, SetDisplay] = useState(false);
   const [SubDisplay, SetSubDisplay] = useState(false);
   let cateitem = cateData.filter((x) => x.title === CName);
+  const width = window.innerWidth;
   return (
     <>
-      <div
-        className="catesidebar"
-        style={{ borderRadius: style.bra, display: style.dis }}
-      >
+   <div className="catesidebar" style={{
+     borderRadius : style.bra
+   }}>
         <ul
           className="cate-sidebar-ul"
           onMouseLeave={(e) => {
@@ -25,21 +25,20 @@ export const CateSidebar = ({ style }) => {
         >
           {cateData.map((x, i) => {
             return (
+            <NavLink to={`/categoies/${x.title.replace(" ","").replace(" ","")}`}>
               <li
                 className="cate-sidebar-ul-li "
                 id={x.id}
                 key={i}
                 onMouseOver={(e) => {
                   SetCName(e.currentTarget.children[1].innerText);
-                  // console.log(e.currentTarget.children[1].innerText);
                   SetDisplay(true);
-                  // console.log(e.currentTarget.classList.toggle("k"));
                 }}
               >
                 <div className="icon-holder">{x.icon}</div>
-                <Link to={x.href} className="cate-sidebar-ul-li-a">
+                <span  className="cate-sidebar-ul-li-a">
                   {x.title}
-                </Link>
+                </span>
                 <span className="arrow">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -51,6 +50,7 @@ export const CateSidebar = ({ style }) => {
                   </svg>
                 </span>
               </li>
+              </NavLink>
             );
           })}
         </ul>
@@ -62,11 +62,11 @@ export const CateSidebar = ({ style }) => {
               ? {
                   display: "flex",
                   position: "absolute",
-                  top: "-0.3rem",
-                  left: "25rem",
-                  borderTopLeftRadius: "1rem",
-                  borderBottomLeftRadius: "1rem",
-                  borderTopRightRadius: "0rem",
+                  top: "0rem",
+                  left: width <="1024" ?"21rem" : "26rem",
+                  borderTopLeftRadius: "1rem ",
+                  borderBottomLeftRadius: "1rem ",
+                  borderTopRightRadius: "0rem ",
                   borderBottomRightRadius: SubDisplay ? "0rem" : "1rem",
                 }
               : { display: "none" }
@@ -88,29 +88,26 @@ export const CateSidebar = ({ style }) => {
             {cateitem.map((x) =>
               x.submenu.map((sub, i) => {
                 return (
+                <NavLink to={`/categories/${x.title.replace(" ","").replace(" ","")}/${sub.title.replace(" ","").replace(" ","")}`}>
                   <li
                     className="cate-sidebar-ul-li"
                     id={sub.id}
                     key={i}
                     onMouseOver={(e) => {
                       SetCSubName(e.currentTarget.firstChild.textContent);
-                      SetSubCate(cateData.find((x) => x.title === CName));
+                      // SetSubCate(cateData.find((x) => x.title === CName));
                       SetSubDisplay(true);
                       x.submenu.find(
                         (x) =>
                           x.title === e.currentTarget.firstChild.textContent
-                      ).insunmenu.length == 0
+                      ).insunmenu.length === 0
                         ? SetSubDisplay(false)
                         : SetSubDisplay(true);
                     }}
-                    // onMouseLeave={(e) => {
-                    //   SetSubDisplay(false);
-                    //   SetCSubName(e.currentTarget.firstChild.textContent);
-                    // }}
                   >
-                    <Link to={sub.href} className="cate-sidebar-ul-li-a">
+                    <span  className="cate-sidebar-ul-li-a">
                       {sub.title}
-                    </Link>
+                    </span>
                     {SubDisplay ? (
                       <span className="arrow">
                         <svg
@@ -126,6 +123,7 @@ export const CateSidebar = ({ style }) => {
                       ""
                     )}
                   </li>
+                  </NavLink>
                 );
               })
             )}
@@ -144,13 +142,15 @@ export const CateSidebar = ({ style }) => {
             SubDisplay
               ? {
                   display: "flex",
+                  width : width <="1024" ?"78.5rem" : "52rem",
                   position: "absolute",
-                  top: "-0.3rem",
-                  left: "48.5rem",
-                  borderTopRightRadius: "1rem",
-                  borderBottomRightRadius: "1rem",
-                  borderTopLeftRadius: "0rem",
-                  borderBottomLeftRadius: "0rem",
+                  top: "0rem",
+                  left: width <="1024" ?"39rem" : "48.5rem",
+                  
+                  borderTopRightRadius: "1rem ",
+                  borderBottomRightRadius: "1rem ",
+                  borderTopLeftRadius: "0rem ",
+                  borderBottomLeftRadius: "0rem ",
                   borderLeft: "1px solid #cccc",
                 }
               : { display: "none" }
@@ -163,13 +163,7 @@ export const CateSidebar = ({ style }) => {
               SetCSubName(CSubName);
               SetDisplay(true);
               SetSubDisplay(true);
-            }}
-            // onMouseLeave={(e) => {
-            //   SetCName(CName);
-            //   SetDisplay(false);
-            //   SetSubDisplay(false);
-            // }}
-          >
+            }}>
             {CSubName}
           </h3>
           <ul
@@ -187,14 +181,15 @@ export const CateSidebar = ({ style }) => {
               SetSubDisplay(false);
             }}
           >
-            {cateitem.map((x) => {
-              let { submenu } = x;
+            {cateitem.map((x1) => {
+              let { submenu } = x1;
               return submenu
                 .filter((y) => y.title === CSubName)
                 .filter((x) => x.insunmenu)
-                .map((x, i) => {
-                  return x.insunmenu.map((sub, i) => {
+                .map((x2, i) => {
+                  return x2.insunmenu.map((sub, i) => {
                     return (
+                    <NavLink to={`/categories/${x1.title.replace(" ","").replace(" ","")}/${x2.title.replace(" ","").replace(" ","")}/${sub.title.replace(" ","").replace(" ","")}`}>
                       <li
                         className="cate-sidebar-ul-li in-sub"
                         id={sub.id}
@@ -209,10 +204,11 @@ export const CateSidebar = ({ style }) => {
                         }}
                       >
                         <img src={sub.img} alt="" />
-                        <Link to={sub.href} className="cate-sidebar-ul-li-a">
+                        <span  className="cate-sidebar-ul-li-a">
                           {sub.title}
-                        </Link>
+                        </span>
                       </li>
+                      </NavLink>
                     );
                   });
                 });

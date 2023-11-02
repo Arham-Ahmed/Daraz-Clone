@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.SingleProduct{
+  
+  .Header{
+    .Desktop_Header{
+    display: flex;
+    }
+    .Mobile_Header{
+      display: none;
+    }
+  }
+}
+.MobileBottomMenuBar{
+  display: none ;
+}
+
+@media only screen and (width <=680px) {
+.SingleProduct{
+  .Header{
+    .Desktop_Header{
+    display: none;
+    }
+    .Mobile_Header{
+      display: flex;
+      
+    }
+  }
+  .Footer{
+    display: none;
+  }
+ }
+.MobileBottomMenuBar{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1111;
+    background: #fff;
+  }
+
+}

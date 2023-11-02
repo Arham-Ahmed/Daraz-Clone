@@ -70,7 +70,6 @@ const MobileAbout = () => {
         src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1jbBCcBCw3KVjSZFuXXcAOpXa.jpg_1200x1200q75.jpg_.webp"
         alt=""
       />
-
       <Footer bottom={false} />
     </>
   );

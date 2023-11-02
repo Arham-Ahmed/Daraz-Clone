@@ -80,12 +80,12 @@ const About = () => {
 
         <div className="mobile-About-content">
           <div className="header">
-            <PageHeader title={document.title} />
+            <PageHeader title={document.title} dots={true}/>
           </div>
           <MobileAbout />
         </div>
       </div>
-      <Footer bottom={false} />
+     {/* <Footer bottom={false} /> */}
     </>
   );
 };

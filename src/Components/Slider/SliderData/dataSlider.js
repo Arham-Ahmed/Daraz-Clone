@@ -5,6 +5,7 @@ const dataSlider = [
     subtitle: "lore1",
     img: "https://icms-image.slatic.net/images/ims-web/8d68addc-d1f8-494d-a684-56ba125b2ac9.jpg_1200x1200.jpg",
     bgc: "#020106",
+    srcset:"https://icms-image.slatic.net/images/ims-web/271e6b8b-f05d-42ad-988e-67ff6ae74aa0.jpg_760x760Q50s150.jpg",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const dataSlider = [
     subtitle: "lore1",
     img: "https://icms-image.slatic.net/images/ims-web/66d73313-bd7d-4ae0-b1f9-952400ceeeaa.jpg",
     bgc: "#B4ACBC",
+    srcset:"https://icms-image.slatic.net/images/ims-web/7e6c5234-bca0-4eb6-bf5e-70184be21f3a.jpg",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const dataSlider = [
     subtitle: "lore1",
     img: "https://icms-image.slatic.net/images/ims-web/ce58de4b-afc4-47e0-bec6-b79526483d00.jpg",
     bgc: "#84C6D4",
+    srcset:"https://icms-image.slatic.net/images/ims-web/5a50c845-abcc-40ce-a130-50ec0e42180a.png",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const dataSlider = [
     subtitle: "lore1",
     img: "https://icms-image.slatic.net/images/ims-web/8f077af6-badd-4660-8b02-0456d9f3563a.jpg",
     bgc: "#ACACAC",
+srcset:"https://icms-image.slatic.net/images/ims-web/4eeb77f6-b3e1-41c1-857e-288991952edf.jpg",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ const dataSlider = [
     subtitle: "lore1",
     img: "https://icms-image.slatic.net/images/ims-web/aac1e57e-68c9-41ca-a723-e921d2aba146.jpg",
     bgc: "#B86F54",
+srcset:"https://icms-image.slatic.net/images/ims-web/7e38097f-9933-4e47-b6b5-a8f3b3fabd71.jpg",
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ const dataSlider = [
     subtitle: "lore1",
     img: "https://icms-image.slatic.net/images/ims-web/baff3de1-f87d-4d10-b63b-c5f130e184c4.jpg",
     bgc: "#948E85",
+srcset:"https://icms-image.slatic.net/images/ims-web/3c0266cd-963d-4669-a497-6cde297ed317.jpg",
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ const dataSlider = [
     subtitle: "lore1",
     img: "https://icms-image.slatic.net/images/ims-web/ff8caa36-2e01-404c-8fa5-ef13885fe639.png",
     bgc: "#9BCBE1",
+srcset:"https://icms-image.slatic.net/images/ims-web/76fc264b-50cb-435d-a752-c50d7ab4675b.jpg",
   },
   {
     id: 8,
@@ -54,6 +61,7 @@ const dataSlider = [
     subtitle: "lore1",
     img: "https://icms-image.slatic.net/images/ims-web/92f90025-c4d5-4460-a316-200b8950ceab.jpg",
     bgc: "#9D8B7E",
+srcset:"https://icms-image.slatic.net/images/ims-web/adc7f45c-86a2-4ccb-885c-cb33274efcf8.png",
   },
   {
     id: 9,
@@ -61,6 +69,7 @@ const dataSlider = [
     subtitle: "lore1",
     img: "https://icms-image.slatic.net/images/ims-web/d0032139-4615-4ad5-95a8-0bca96299f98.jpg",
     bgc: "#41003A",
+srcset:"https://icms-image.slatic.net/images/ims-web/084827a1-881a-499b-a31f-141ca7a0a02c.jpg",
   },
 ];
 

@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.ProductsContainerTemplate{
+  max-width: 1188px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom:1rem;
+  .Heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #000;
+  }
+}
+@media only screen and (width <=680px){
+  .ProductsContainerTemplate{
+  .Heading{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    color: #000;
+  }
+}
+}

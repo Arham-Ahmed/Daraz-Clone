@@ -1,14 +1,14 @@
 import React, { useEffect, useReducer } from "react";
 import "./PageHeader.css";
-import { Link } from "react-router-dom";
+import { Link,Router , useNavigate } from "react-router-dom";
 import reducer from "../../../Reducers/dropReducer";
 
 const intialState = {
   isAboutDrop: false,
   isLangdrop: false,
-  islangCheck: false,
+  islangCheck: true,
 };
-const PageHeader = ({ title }) => {
+const PageHeader = ({ title ,dots }) => {
   const [state, dispatch] = useReducer(reducer, intialState);
   const handleSticky = () => {
     let Header = document.querySelector(".Page_header");
@@ -22,13 +22,14 @@ const PageHeader = ({ title }) => {
       window.removeEventListener("scroll", handleSticky);
     };
   });
+  const navigate = useNavigate()
   return (
     <>
       <header className="Page_header">
-        <Link to="/">
-          <div
-            className="back-arrow"
-            onClick={() => dispatch({ type: "ABOUT_DROP_CLOSE" })}
+      <div className="arrow-container" onClick={()=>navigate(-1)}>
+        <div
+     className="back-arrow"
+      onClick={() => dispatch({ type: "ABOUT_DROP_CLOSE" })}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -44,14 +45,18 @@ const PageHeader = ({ title }) => {
               />
             </svg>
           </div>
-        </Link>
+        </div>
+         
+       
         <div
           className="header-title"
           onClick={() => dispatch({ type: "ABOUT_DROP_CLOSE" })}
         >
           {title}
         </div>
-        <div
+        <div style={{
+        display : dots===true? "flex":"none",
+        }}
           className="drop-dots"
           onClick={() =>
             dispatch({
@@ -82,22 +87,22 @@ const PageHeader = ({ title }) => {
             onMouseOver={() => dispatch({ type: "ABOUT_DROP" })}
             onMouseLeave={() => dispatch({ type: "ABOUT_DROP_CLOSE" })}
           >
-            <Link to="">
+            <Link to="/Login">
               <li>Login</li>
             </Link>
-            <Link to="">
+            <Link to="/">
               <li>Home</li>
             </Link>
-            <Link to="">
+            <Link to="/Categories">
               <li>Categories</li>
             </Link>
-            <Link to="">
+            <Link to="/Account">
               <li>My Account</li>
             </Link>
-            <Link to="">
+            <Link to="/Order">
               <li>My Order</li>
             </Link>
-            <Link to="">
+            <Link to="/Wishlist">
               <li>My Wishlist</li>
             </Link>
 
@@ -137,7 +142,7 @@ const PageHeader = ({ title }) => {
                   className="bi bi-check-lg"
                   viewBox="0 0 16 16"
                   style={{
-                    display: state.islangCheck == true ? "flex" : "none",
+                    display: state.islangCheck === true ? "flex" : "none",
                   }}
                 >
                   <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
@@ -160,7 +165,7 @@ const PageHeader = ({ title }) => {
                   className="bi bi-check-lg"
                   viewBox="0 0 16 16"
                   style={{
-                    display: state.islangCheck == false ? "flex" : "none",
+                    display: state.islangCheck === false ? "flex" : "none",
                   }}
                 >
                   <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />

@@ -47,10 +47,9 @@
                         list-style: none;
                         font-size: 1.4rem;
 
-                        >a {
-                            text-decoration: none;
+                     >a {
+                 text-decoration: none;
                             color: #1c1c1c;
-
                             &:hover {
                                 /* color: #F85606; */
                                 text-decoration: underline;
@@ -339,9 +338,79 @@
         }
     }
 }
+   .Mobile_Footer{
+      display: none;
+    }
 
 @media only screen and (width <=680px) {
     .Footer {
         display: none;
     }
+    .Mobile_Footer{
+          display: flex;
+          background: transparent;
+          margin-bottom: 6.5rem;
+          flex-direction: column;
+          text-align: center;
+          .Mobile_Footer_ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 0.1rem;
+            .Mobile_Footer_li{
+              width: 12rem;
+              height: 7rem;
+              padding: 0.3rem 1.1rem 1.1rem 1.1rem;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              align-content: center;
+              background: #fff;
+              justify-content: center;
+              gap: 0.4rem;
+              .Footer_Mobile_img{
+              display: flex;
+               align-content: center;
+               align-items: center ;
+               width: 2.3rem !important;
+               height: 2.3rem !important;
+                fill: #757575 !important;
+              }
+              .Mobile_Footer_text{
+                height: 1.3rem;
+                font-size: 1.1rem;
+                color: #757575;
+                text-align: center;
+              }
+            }
+          }
+          .Crtext{
+            margin-top: 0.4rem;
+            font-size: 1.1rem;
+            color: #757575;
+          }
+          .Mobile_Footer_links{
+            display: flex;
+            align-items: center;
+            margin: 1rem auto;
+            
+            .Mobile_Footer_a{
+              text-decoration: none;
+              
+            .Mobile_Footer_li{
+              font-size: 1.2rem;
+              
+              list-style: none;
+              color:#199CB7 ;
+              padding: 0 0.2rem;
+            }
+            }
+              .Line{
+                width: 1px;
+                height: 1rem;
+              background:#199CB7 ;
+              }
+          }
+        }
 }
