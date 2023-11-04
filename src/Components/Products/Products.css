@@ -5,12 +5,13 @@ box-sizing: border-box;
 position: relative;
 }
 .Products_container{
-  max-width: 19rem;
+  max-width: 19.50rem;
   max-height: 30rem;
   min-width: 13.5rem;
   height: 28rem;
   background: #fff;
   transition: all .40s ease;
+  width: 100%;
   
   .Products_img{
    flex-shrink: 0;
@@ -206,15 +207,19 @@ position: relative;
   }
 }
 
-
+@media only screen and (width <=1188px){
+  .Products_container{
+    width: 17.35rem;
+  }
+}
 @media only screen and (width <=1024px){
   .Products_container{
-    width: 16rem;
+    width: 15.50rem;
   }
 }
 @media only screen and (width <=680px){
   .Products_container{
-    width: 17rem;
+    width: 18rem;
     min-height: 27rem;
     height: auto !important;
     border-radius: 0.5rem;

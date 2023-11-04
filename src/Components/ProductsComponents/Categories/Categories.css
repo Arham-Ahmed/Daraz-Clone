@@ -50,13 +50,28 @@
     }
   }
 }
+@media only screen and (width <=1188px){
+  .Categories_container{
+    .Categories_ul{
+      >a{
+        .Categories_li{
+          width: 13.60rem;
+          height: 13.60rem;
+          .Categories_text{
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+} 
 @media only screen and (width <=1024px){
   .Categories_container{
     .Categories_ul{
       >a{
         .Categories_li{
-          width: 12.5rem;
-          height: 12.5rem;
+          width: 10.90rem;
+          height: 10.90rem;
           .Categories_text{
             font-size: 1.2rem;
           }
